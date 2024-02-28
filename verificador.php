@@ -299,10 +299,10 @@ if (isset($_POST['submit'])) {
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
-                        <span class="app-brand-logo demo">
-                        <img src="assets/img/icone.png" height="40px" width="40px" margin-left="10px">
+                    <span class="app-brand-logo demo">
+                            <img src="assets/img/icone1.png" height="40px" width="40px" margin-left="10px">
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2">LF Promotora</span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2">Verifica WPP</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -340,19 +340,6 @@ if (isset($_POST['submit'])) {
                         </a>
                     </li>
 
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class='menu-icon tf-icons bx bxl-whatsapp-square'></i>
-                            <div data-i18n="Configurações">Disparador</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="enviar_msg_txt.php" class="menu-link">
-                                    <div data-i18n="WhatsApp Api">Mensagem de Texto</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
 
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">

@@ -41,7 +41,7 @@ curl_close($ch);
 $responseArray = json_decode($response, true);
 
 if ($responseArray['message'] === 'session_not_found') {
-    
+
     // Parametros do End-Point
     $parametros_start = "/session/start/";
 
@@ -66,11 +66,13 @@ if ($responseArray['message'] === 'session_not_found') {
 
 ?>
 <!DOCTYPE html>
-<html lang="pt-br" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
+<html lang="pt-br" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+    data-template="vertical-menu-template-free">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
     <title>Manager - LF Promotora</title>
 
@@ -82,7 +84,9 @@ if ($responseArray['message'] === 'session_not_found') {
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
@@ -115,13 +119,14 @@ if ($responseArray['message'] === 'session_not_found') {
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
-                    <span class="app-brand-logo demo">
-                    <img src="assets/img/icone.png" height="40px" width="40px" margin-left="10px">
+                        <span class="app-brand-logo demo">
+                            <img src="assets/img/icone1.png" height="40px" width="40px" margin-left="10px">
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2">LF Promotora</span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2">Verifica WPP</span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
                         <i class="bx bx-chevron-left bx-sm align-middle"></i>
                     </a>
                 </div>
@@ -196,42 +201,50 @@ if ($responseArray['message'] === 'session_not_found') {
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <div class="card">
-                            <h5 class="card-header">Exibindo QRCODE<br><hr>Instancia: <span style="color:red"><?php echo $instancia ?></span><hr></h5>
-                            <div style="padding-left: 20px; padding-right:20px"><div class="alert alert-danger" role="alert" style="padding: 20px;">QRCODE é válido por apenas 40 segundos, Caso não apareça ou erro, atualize a página.</div></div>
+                            <h5 class="card-header">Exibindo QRCODE<br>
+                                <hr>Instancia: <span style="color:red">
+                                    <?php echo $instancia ?>
+                                </span>
+                                <hr>
+                            </h5>
+                            <div style="padding-left: 20px; padding-right:20px">
+                                <div class="alert alert-danger" role="alert" style="padding: 20px;">QRCODE é válido por
+                                    apenas 40 segundos, Caso não apareça ou erro, atualize a página.</div>
+                            </div>
                             <?php
                             if ($responseArray['state'] === 'CONNECTED') {
                                 echo '<div style="margin-left:20px; margin-bottom:20px"><span class="badge" style="padding:10%; border-radius:12px; background-color:green">Instancia Conectada</span></div>';
-                            }else{
-
-                            // Parametros do End-Point
-                            $parametros = "/session/qr/".$instancia."/image";
-
-                            // Montando url de ação
-                            $url = $url_api . $parametros;
-
-                            $headers = [
-                                'accept: image/png',
-                                'x-api-key: ' . $api_key
-                            ];
-
-                            $ch = curl_init($url);
-                            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-                            $response = curl_exec($ch);
-                            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-                            curl_close($ch);
-
-                            if ($httpCode == 200) {
-                                $imageData = base64_encode($response); // Convertendo a imagem para base64
-                                $src = 'data:image/png;base64,'.$imageData; // Criando o src da tag img
-                                echo "<div><img src=\"$src\"></div>"; // Exibindo a imagem dentro da div
                             } else {
-                                echo "Erro ao obter o QR code, atualize a página.";
-                            }
+
+                                // Parametros do End-Point
+                                $parametros = "/session/qr/" . $instancia . "/image";
+
+                                // Montando url de ação
+                                $url = $url_api . $parametros;
+
+                                $headers = [
+                                    'accept: image/png',
+                                    'x-api-key: ' . $api_key
+                                ];
+
+                                $ch = curl_init($url);
+                                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                                curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+                                $response = curl_exec($ch);
+                                $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+                                curl_close($ch);
+
+                                if ($httpCode == 200) {
+                                    $imageData = base64_encode($response); // Convertendo a imagem para base64
+                                    $src = 'data:image/png;base64,' . $imageData; // Criando o src da tag img
+                                    echo "<div><img src=\"$src\"></div>"; // Exibindo a imagem dentro da div
+                                } else {
+                                    echo "Erro ao obter o QR code, atualize a página.";
+                                }
                             }
 
-                            ?>                            
+                            ?>
                         </div>
                     </div>
 

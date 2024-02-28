@@ -6,7 +6,7 @@ CREATE TABLE `config_api` (
 
 
 INSERT INTO `config_api` (`id`, `url_api`, `api_key`) VALUES
-(1, 'http://192.168.15.55:3000', 'cursodev');
+(1, 'http://192.168.15.55:3000', 'suachave');
 
 
 CREATE TABLE `instancias` (

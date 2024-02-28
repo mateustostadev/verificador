@@ -83,11 +83,13 @@ if (isset($_GET['apagar'])) {
 
 ?>
 <!DOCTYPE html>
-<html lang="pt-br" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
+<html lang="pt-br" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+    data-template="vertical-menu-template-free">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
     <title>Manager - LF Promotora</title>
 
@@ -99,7 +101,9 @@ if (isset($_GET['apagar'])) {
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
@@ -133,12 +137,13 @@ if (isset($_GET['apagar'])) {
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                        <img src="assets/img/icone.png" height="40px" width="40px" margin-left="10px">
+                            <img src="assets/img/icone1.png" height="40px" width="40px" margin-left="10px">
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2">LF Promotora</span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2">Verifica WPP</span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
                         <i class="bx bx-chevron-left bx-sm align-middle"></i>
                     </a>
                 </div>
@@ -171,20 +176,6 @@ if (isset($_GET['apagar'])) {
                             <i class="menu-icon tf-icons bx bxl-whatsapp"></i>
                             <div data-i18n="Analytics">Verificador WhatsApp</div>
                         </a>
-                    </li>
-
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class='menu-icon tf-icons bx bxl-whatsapp-square'></i>
-                            <div data-i18n="Configurações">Disparador</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="enviar_msg_txt.php" class="menu-link">
-                                    <div data-i18n="WhatsApp Api">Mensagem de Texto</div>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
 
                     <li class="menu-item">

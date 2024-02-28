@@ -29,7 +29,7 @@ try {
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Administração - Sistema LF Promotora!</title>
+    <title>Administração - Sistema !</title>
 
     <meta name="description" content="" />
 
@@ -75,9 +75,9 @@ try {
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="assets/img/icone.png" height="40px" width="40px" margin-left="10px">
+                            <img src="assets/img/icone1.png" height="40px" width="40px" margin-left="10px">
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2">LF Promotora</span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2">Verifica WPP</span>
                     </a>
 
                     <a href="javascript:void(0);"
@@ -116,19 +116,6 @@ try {
                         </a>
                     </li>
 
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class='menu-icon tf-icons bx bxl-whatsapp-square'></i>
-                            <div data-i18n="Configurações">Disparador</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="enviar_msg_txt.php" class="menu-link">
-                                    <div data-i18n="WhatsApp Api">Mensagem de Texto</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
 
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -142,6 +129,7 @@ try {
                                 </a>
                             </li>
                         </ul>
+
                     <li class="menu-item">
                         <a href="<?php echo $url_api ?>/api-docs" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons bx bxl-whatsapp"></i>
@@ -192,10 +180,10 @@ try {
                             <div class="d-flex align-items-end row">
                                 <div class="col-sm-7">
                                     <div class="card-body">
-                                        <h5 class="card-title text-primary"> Bem Vindo ao Disparador LF 🎉</h5>
+                                        <h5 class="card-title text-primary"> Bem Vindo ao <strong>Verifica Wpp</strong> 🎉</h5>
                                         <p class="mb-4">
-                                            O <strong>Disparador LF</strong> foi desenvolvido para atender as necessidades da
-                                            automatização de disparos via WhatsApp. Com o nosso sistema, você poderá
+                                            O <strong>Verifica Wpp</strong> foi desenvolvido para atender as necessidades da
+                                            automatização de verificações de numeros telefônicos via WhatsApp. Com o nosso sistema, você poderá
                                             criar várias instâncias e gerenciá-las de forma fácil e prática, garantindo
                                             rapidez e agilidade no processo.
                                         </p>
