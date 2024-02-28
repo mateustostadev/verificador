@@ -185,7 +185,7 @@ try {
                                             O <strong>Verifica Wpp</strong> foi desenvolvido para atender as necessidades da
                                             automatização de verificações de numeros telefônicos via WhatsApp. Com o nosso sistema, você poderá
                                             criar várias instâncias e gerenciá-las de forma fácil e prática, garantindo
-                                            rapidez e agilidade no processo.
+                                            rapidez e agilidade no processo
                                         </p>
                                     </div>
                                 </div>
