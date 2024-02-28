@@ -148,7 +148,7 @@ if (isset($_POST['submit'])) {
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/fav.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -300,7 +300,7 @@ if (isset($_POST['submit'])) {
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
                     <span class="app-brand-logo demo">
-                            <img src="assets/img/icone1.png" height="40px" width="40px" margin-left="10px">
+                            <img src="assets/img/icone1.png" height="45px" width="45px" margin-left="10px">
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Verifica WPP</span>
                     </a>

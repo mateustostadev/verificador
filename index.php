@@ -29,12 +29,12 @@ try {
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Administração - Sistema !</title>
+    <title>Administração - Sistema Verifica WPP!</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/fav.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,7 +75,7 @@ try {
                 <div class="app-brand demo">
                     <a href="index.php" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="assets/img/icone1.png" height="40px" width="40px" margin-left="10px">
+                            <img src="assets/img/icone1.png" height="45px" width="45px" margin-left="10px">
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Verifica WPP</span>
                     </a>
@@ -185,7 +185,9 @@ try {
                                             O <strong>Verifica Wpp</strong> foi desenvolvido para atender as necessidades da
                                             automatização de verificações de numeros telefônicos via WhatsApp. Com o nosso sistema, você poderá
                                             criar várias instâncias e gerenciá-las de forma fácil e prática, garantindo
-                                            rapidez e agilidade no processo
+                                            rapidez e agilidade no processo<br><br>Desenvolvido por <strong>Mateus Tosta </strong>
+
+                                            
                                         </p>
                                     </div>
                                 </div>
