@@ -433,7 +433,7 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-12">
                                 <div class="d-flex align-items-center">
                                     <div class="text-center">
-                                        <span class="text-muted">2024 &copy; LF Promotora</span>
+                                        <span class="text-muted">2024 &copy; Mateus Tosta</span>
                                     </div>
                                 </div>
                             </div>
