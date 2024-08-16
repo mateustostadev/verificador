@@ -16,7 +16,7 @@ CREATE TABLE `instancias` (
 
 
 INSERT INTO `instancias` (`id`, `nome`) VALUES
-(1, 'cursodev07');
+(1, 'suainstancia');
 
 
 ALTER TABLE `config_api`
